@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>MoviePick</h1>
+    <p>Find your next movie</p>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="action.html">Action</a>
+    <a href="romance.html">Romance</a>
+    <a href="comedy.html">Comedy</a>
+</nav>
+<main>
+
+    <section>
+        <h2>Romance Movies</h2>
+        <p>Romance movies tell stories about love, friendship and important moments in life.</p>
+        <div class="filter-buttons">
+            <button onclick="filterMovies('all')">Show all</button>
+            <button onclick="filterMovies('popular')">Popular picks</button>
+            <button onclick="filterMovies('classic')">Classic picks</button>
+        </div>
+
+        <div class="grid movie-list">
+            <div class="card movie-card classic">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Illustrated movie poster for La La Land">
+                <h3>La La Land</h3>
+                <p>Two artists follow their dreams and build a relationship.</p>
+            </div>
+            
+            <div class="card movie-card popular">
+                <img src="https://play-lh.googleusercontent.com/hXAHyHqU-s2YsSRNd4TKqANSbRzBUNlkoXSozDRIjZRZ24pKayLpM1xCfhglrZfVsAfNMx33xXj3WzlRvhU" alt="Illustrated movie poster for The Notebook">
+                <h3>The Notebook</h3>
+                <p>A heartwarming story about true love and memories that last forever.</p>
+            </div>
+
+            <div class="card movie-card classic">
+                <img src="https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_.jpg" alt="Illustrated movie poster for Titanic">
+                <h3>Titanic</h3>
+                <p>A touching story about love, sacrifice and a tragic journey.</p>
+            </div>
+            
+            <div class="card movie-card popular">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTA1ODUzMDA3NzFeQTJeQWpwZ15BbWU3MDgxMTYxNTk@._V1_.jpg" alt="Illustrated movie poster for About Time">
+                <h3>About Time</h3>
+                <p>A lovely story about time travel, family and the importance of every moment.</p>
+            </div>
+        </div>
+        <p><a href="index.html">Back to Home</a></p>
+    </section>
+
+</main>
+<footer>
+    <p>MoviePick : A simple movie guide made with HTML, CSS and JavaScript.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

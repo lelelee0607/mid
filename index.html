@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--資訊欄-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--連接CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--標題-->
+<header>
+    <h1>MoviePick</h1>
+    <p>Find your favorite movie</p>
+</header>
+
+<!--不同頁面跳轉-->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="action.html">Action</a>
+    <a href="romance.html">Romance</a>
+    <a href="comedy.html">Comedy</a>
+</nav>
+
+<main>
+    <!--主頁-->
+    <section class="hero">
+        <h2>Welcome to MoviePick!</h2>
+        <p>Have no idea what to watch tonight? Use our simple movie guide and find your favorite film!</p>
+        <button onclick="randomMovie()">Recommend a movie</button>
+        <p id="random-result">Your movie recommendation will appear here.</p>
+    </section>
+
+    <!--列表-->
+    <section>
+        <h2>Explore movie categories</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg" alt="Illustrated poster for Inception">
+                <h3>Action</h3>
+                <p>Exciting stories, heroes and adventures.</p>
+                <a href="action.html">Explore action movies</a>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Illustrated poster for La La Land">
+                <h3>Romance</h3>
+                <p>Warm stories about love and relationships.</p>
+                <a href="romance.html">Explore romance movies</a>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_.jpg" alt="Illustrated poster for The Truman Show">
+                <h3>Comedy</h3>
+                <p>Funny films to make you smile.</p>
+                <a href="comedy.html">Explore comedy movies</a>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTk3MDljY2YtYjVjNy00ZDhjLWI1ZWUtMDgwZTIyNjlkZGQxXkEyXkFqcGc@._V1_.jpg" alt="IMDb : Internet Movie Database">
+                <h3>What's More......</h3>
+                <p>IMDb : Internet Movie Database</p>
+                <a href="https://www.imdb.com/">See more movies</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Quick movie list</h2>
+        <p>Here are a few movies featured on our website.</p>
+        <table>
+            <tr><th>Movie</th><th>Category</th><th>Suggested mood</th></tr>
+            <tr><td>Inception</td><td>Action / Sci-Fi</td><td>Something exciting</td></tr>
+            <tr><td>La La Land</td><td>Romance</td><td>Something emotional</td></tr>
+            <tr><td>Extreme Job</td><td>Comedy</td><td>Something funny</td></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>How to use this guide</h2>
+        <ol>
+            <li>Choose a movie category from the navigation menu.</li>
+            <li>Read the short movie descriptions.</li>
+            <li>Use the random recommendation button if you cannot decide.</li>
+        </ol>
+        <p>Learn more about movies at <a href="https://www.imdb.com/" target="_blank" rel="noopener">IMDb</a>.</p>
+    </section>
+
+</main>
+<footer>
+    <p>MoviePick : A simple movie guide made with HTML, CSS and JavaScript.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
