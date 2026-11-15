@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>MoviePick</h1>
+    <p>Find your next movie</p>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="action.html">Action</a>
+    <a href="romance.html">Romance</a>
+    <a href="comedy.html">Comedy</a>
+</nav>
+<main>
+    <section>
+        <h2>Action Movies</h2>
+        <p>Action movies are full of exciting scenes, challenges and adventures.</p>
+        
+        <div class="filter-buttons">
+            <button onclick="filterMovies('all')">Show all</button>
+            <button onclick="filterMovies('popular')">Popular picks</button>
+            <button onclick="filterMovies('classic')">Classic picks</button>
+        </div>
+
+        <!--兩個class-->
+        <div class="grid movie-list">
+            <!--popular標籤-->
+            <div class="card movie-card popular">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg" alt="Illustrated movie poster for Inception">
+                <h3>Inception</h3>
+                <p>A mind-bending story about dreams and reality.</p>
+            </div>
+            
+            <div class="card movie-card classic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHX_WrSgx1OdTfcgzFieXciR910W3TArdBDUXrjTtxg&s=10" alt="Illustrated movie poster for Matrix">
+                <h3>Matrix</h3>
+                <p>A mind-bending story about reality, technology and a hidden world.</p>
+            </div>
+
+            <div class="card movie-card popular">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/6c2c7ace999b2efa7d6d113f7f3ec49f83722dbd2a22b202ef8028f26a1d0b69.jpg" alt="Illustrated movie poster for John Wick">
+                <h3>John Wick</h3>
+                <p>An action-packed story about revenge, courage and a deadly assassin.</p>
+            </div>
+            
+            <div class="card movie-card classic">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/112c733be859b7eac2f9764157c720b785bbd52deaaf0da4652e9dd6a13cb75e._UR2000,3000_CLs%7C2000,3000%7C/G/bundle/BottomRightCardGradient2x3.png,/G/01/digital/video/merch/subs/benefit-id/a-f/cbsaacf/logos/channels-logo-white-stacked.png%7C0,0,2000,3000+0,0,2000,3000+1426,2798,487,115_kv4600e6e6b6650a7b1b1d469e8b864fb4_.jpg" alt="Illustrated movie poster for Mission Impossible">
+                <h3>Mission Impossible</h3>
+                <p>An exciting story about secret missions, danger and impossible challenges.</p>
+            </div>
+        </div>
+        <p><a href="index.html">Back to Home</a></p>
+    </section>
+
+</main>
+<footer>
+    <p>MoviePick : A simple movie guide made with HTML, CSS and JavaScript.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

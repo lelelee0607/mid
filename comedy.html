@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>MoviePick</h1>
+    <p>Find your next movie</p>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="action.html">Action</a>
+    <a href="romance.html">Romance</a>
+    <a href="comedy.html">Comedy</a>
+</nav>
+<main>
+    <section>
+        <h2>Comedy Movies</h2>
+        <p>Comedy movies are a great choice when you want to relax and have a laugh.</p>
+        <div class="filter-buttons">
+            <button onclick="filterMovies('all')">Show all</button>
+            <button onclick="filterMovies('popular')">Popular picks</button>
+            <button onclick="filterMovies('classic')">Classic picks</button>
+        </div>
+
+        <div class="grid movie-list">
+            <div class="card movie-card popular">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/e7/The_Devil_Wears_Prada_main_onesheet.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Illustrated movie poster for The Devil Wears Prada">
+                <h3>The Devil Wears Prada</h3>
+                <p>A funny story about fashion, ambition and life in the workplace.</p>
+            </div>
+        
+            <div class="card movie-card classic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQxuF3wPr-amE0VoXsk_NgA4t9HBHIn2GbwA2aM_sSA&s=10" alt="Illustrated movie poster for 3 Idiots">
+                <h3>3 Idiots</h3>
+                <p>An inspiring story about friendship, dreams and the true meaning of success.</p>
+            </div>
+        
+            <div class="card movie-card popular">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmq_jZtZmTpUwN4a_J6Qr1-vGc7ShSWDKJednaVJN7iYeuHNMB7_6Wi0g&s=10" alt="Illustrated movie poster for Extreme Job">
+                <h3>Extreme Job</h3>
+                <p>A hilarious story about undercover detectives and an unexpected restaurant business.</p>
+            </div>
+        
+            <div class="card movie-card classic">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_.jpg" alt="Illustrated movie poster for The Truman Show">
+                <h3>The Truman Show</h3>
+                <p>A thought-provoking story about freedom, reality and a life that is not what it seems.</p>
+            </div>
+        </div>
+        <p><a href="index.html">Back to Home</a></p>
+    </section>
+
+</main>
+<footer>
+    <p>MoviePick : A simple movie guide made with HTML, CSS and JavaScript.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
